@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dharohar – Heritage Explorer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #bac72f;
+      color: #333;
+      line-height: 1.6;
+    }
+    nav {
+      background: #2d2d2d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo {
+      color: #f9c74f;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #f9c74f; }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/7/7f/Varanasi_Dashashwamedh_Ghat.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+    .hero h1 { font-size: 3rem; margin: 0; }
+    .hero p { font-size: 1.2rem; margin-top: 0.5rem; }
+    section { padding: 3rem 2rem; }
+    section h2 {
+      color: #2d2d2d;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 { margin: 0.8rem; color: #1d3557; }
+    .card p { margin: 0.5rem 0.8rem; }
+    .card a { color: #e63946; text-decoration: none; }
+    .card a:hover { text-decoration: underline; }
+    footer {
+      background: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Dharohar</div>
+    <ul>
+      <li><a href="#banaras">Banaras</a></li>
+      <li><a href="#chennai">Chennai</a></li>
+      <li><a href="#delhi">Delhi</a></li>
+      <li><a href="#srilanka">Sri Lanka</a></li>
+      <li><a href="#ayodhya">Ayodhya</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Dharohar</h1>
+    <p>Preserving India’s Heritage through Rituals, Festivals & Stories</p>
+  </header>
+
+  <!-- Banaras -->
+  <section id="banaras">
+    <h2>Banaras (Varanasi)</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="Dashashwamedh_Ghat_Attractions.jpg" alt="Dashashwamedh Ghat">
+        <h3>Dashashwamedh Ghat</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/syQbGQApqjjR1JkF7" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Evening Ganga Aarti, Maha Aarti</p>
+        <p><strong>Story:</strong> Lord Brahma performed ten Ashvamedha yajnas here.</p>
+      </div>
+      <div class="card">
+        <img src="deepvali.jpg" alt="Dev Deepawali">
+        <h3>Dev Deepawali</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/syQbGQApqjjR1JkF7" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Lakhs of diyas lit on Kartik Purnima</p>
+        <p><strong>Story:</strong> Celebrates Shiva’s victory over Tripurasura.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chennai -->
+  <section id="chennai">
+    <h2>Chennai</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="licensed-image (1).jpg" alt="Kapaleeshwarar Temple">
+        <h3>Kapaleeshwarar Temple</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/fuUejyGLhV6mAD3c9" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Six daily pujas, Panguni Peruvizha</p>
+        <p><strong>Story:</strong> Parvati appeared as a peahen here.</p>
+      </div>
+      <div class="card">
+        <img src="hello.jpg" alt="Marina Beach">
+        <h3>Marina Beach</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/yyGpFg1XokFpjAHU9" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Pongal Kaanum, Ganesh immersion</p>
+        <p><strong>Story:</strong> Cultural hub of Chennai.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delhi -->
+  <section id="delhi">
+    <h2>Delhi</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="a.jpg" alt="Akshardham Temple">
+        <h3>Akshardham Temple</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/tNvzv7hY6kZ2U5nB6" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Evening Aarti, Jal Jhulni Ekadashi</p>
+        <p><strong>Story:</strong> Blend of devotion & modern cultural showcases.</p>
+      </div>
+      <div class="card">
+        <img src="phool.jpg">
+        <h3>Phoolwalon-ki-Sair</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/vq6kY6WzXPSoxfgz5" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Floral processions, Kathak, Qawwali</p>
+        <p><strong>Story:</strong> Started in 1814, symbol of communal harmony.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sri Lanka -->
+  <section id="srilanka">
+    <h2>Sri Lanka</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="hii.jpg">
+        <h3>Temple of Sacred Tooth Relic</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/AA8yTX2XZqYHzp3A9" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Esala Perahera, Harvest Festival</p>
+        <p><strong>Story:</strong> Houses Buddha’s sacred tooth relic.</p>
+      </div>
+      <div class="card">
+        <img src="i.jpg">
+        <h3>Kataragama Temple</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/RTzybZTcH2c7LXjD8" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Fire-walking, Water-cutting ceremony</p>
+        <p><strong>Story:</strong> Dedicated to Murugan/Skanda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ayodhya -->
+  <section id="ayodhya">
+    <h2>Ayodhya</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="ram.jpg" alt="Ram Mandir Ayodhya">
+        <h3>Ram Mandir</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/Lv3oUJbLqjB4v6JY9" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Ram Navami, Deepotsav</p>
+        <p><strong>Story:</strong> Birthplace of Lord Rama.</p>
+      </div>
+      <div class="card">
+        <img src="images.jpg" alt="Hanuman Garhi">
+        <h3>Hanuman Garhi</h3>
+        <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/hw3cGmQzZQJhpZzv6" target="_blank">View on Google Maps</a></p>
+        <p><strong>Rituals:</strong> Daily Aarti, special Tuesdays</p>
+        <p><strong>Story:</strong> Hanuman is believed to guard Ayodhya here.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Dharohar Project | Preserving Culture & Heritage</p>
+  </footer>
+</body>
+</html>
